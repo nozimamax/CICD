@@ -24,7 +24,7 @@ func TestHealthHandler(t *testing.T) {
         t.Errorf("Expected status 200 OK, got %v", status)
     }
 
-    expected := "hello world"
+    expected := "hello health"
     if w.Body.String() != expected {
         t.Errorf("Expected response body %v, got %v", expected, w.Body.String())
     }
